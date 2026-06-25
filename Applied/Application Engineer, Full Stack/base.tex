@@ -1,0 +1,215 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage{parskip}
+\usepackage{hologo}
+\usepackage{fontspec}
+\RequirePackage{color}
+\RequirePackage{graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[scale=0.88, top=.4in, bottom=.4in, left=0.5in, right=0.5in]{geometry}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}
+\usepackage{supertabular}
+\usepackage{titlesec}
+\usepackage{multicol}
+\usepackage{multirow}
+
+\titleformat{\section}
+  {\fontsize{15}{17}\selectfont\bfseries\scshape\raggedright}
+  {}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{6pt}{3pt}
+
+\usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
+\usepackage[unicode, draft=false]{hyperref}
+\hypersetup{colorlinks=true, urlcolor=[HTML]{1A6FB5}, linkcolor=[HTML]{1A6FB5}, citecolor=black}
+\addbibresource{citations.bib}
+\setlength\bibitemsep{1em}
+\setlength{\parskip}{0pt}
+\usepackage{fontawesome5}
+\usepackage[normalem]{ulem}
+\setmainfont{Josefin Sans}[
+  BoldFont={Josefin Sans Bold},
+  ItalicFont={Josefin Sans Italic},
+  BoldItalicFont={Josefin Sans Bold Italic}
+]
+
+\newcommand{\ulink}[2]{\href{#1}{\uline{#2}}}
+\newcommand{\subheading}[1]{{\color[HTML]{0A0A0A}\fontsize{12}{14}\selectfont\bfseries #1}}
+\newcommand{\techstack}[1]{{\color[HTML]{5C5C5C}\fontsize{10.5}{12.5}\selectfont\itshape #1}}
+\newcommand{\meta}[1]{{\color[HTML]{5C5C5C}\fontsize{10.5}{12.5}\selectfont #1}}
+
+\begin{document}
+\pagestyle{empty}
+
+%---- HEADER ----
+\begin{tabularx}{\linewidth}{@{} C @{}}
+  {\color[HTML]{000000}\fontsize{30}{35}\selectfont\bfseries Sujith S} \\[5pt]
+  {\fontsize{10.5}{12.5}\selectfont\color[HTML]{3A3A3A}Application Engineer $|$ Enterprise Applications $\bullet$ Financial Systems $\bullet$ Cloud Platforms $\bullet$ Full-Stack SDLC} \\[6pt]
+  {\fontsize{10.5}{12.5}\selectfont
+    \textcolor[HTML]{3A3A3A}{%
+    {\rotatebox[origin=c]{-90}{\faPhone}}\ +91 9843579926
+    \quad
+    {\faEnvelope}\ sujithssd14@gmail.com
+    \quad
+    \ulink{https://github.com/su-jin1425}{{\faGithub}\ su-jin1425}
+    \quad
+    \ulink{https://sujith1425.vercel.app}{{\faGlobe}\ sujith1425.vercel.app}
+    \quad
+    \ulink{https://linkedin.com/in/sujith14}{{\faLinkedin}\ sujith14}
+    }
+}
+\end{tabularx}
+
+\vspace{2pt}
+
+%---- SUMMARY ----
+\section{Summary}
+\vspace{2pt}
+{\color[HTML]{0A0A0A}\fontsize{11}{14}\selectfont
+Penultimate-year Computational Statistics and Data Analytics student at VIT University (2022--2027) with a peer-reviewed publication on ML applied to financial time-series forecasting. Experienced in the full software development life cycle --- requirements gathering, design, implementation, testing, documentation, deployment, and ongoing support --- for internal and customer-facing enterprise applications. Built and integrated web-scale data pipelines processing millions of events per day, developed financial planning and analysis platforms, and delivered production-grade business applications using Python, Java, and cloud platforms including Google Cloud and AWS. Proven ability to partner with cross-functional stakeholders to translate business requirements into reliable, maintainable software.
+}
+
+\vspace{2pt}
+
+%---- EDUCATION ----
+\section{Education}
+\vspace{2pt}
+
+\begin{tabularx}{\linewidth}{@{}p{0.62\linewidth} R@{}}
+  \subheading{Int.Msc Computational Statistics and Data Analytics} &
+  \meta{VIT University $|$ 2022--2027}
+\end{tabularx}
+\vspace{2pt}
+{\color[HTML]{3A3A3A}\fontsize{11}{14}\selectfont Relevant Coursework: Data Structures \& Algorithms, Distributed Systems, Software Engineering, Database Systems, Computer Networks, Financial Analytics, Cloud Computing, Statistical Modeling}
+
+\begin{tabularx}{\linewidth}{@{}p{0.62\linewidth} R@{}}
+  \subheading{CS50 Programs} &
+  \meta{Harvard University $|$ CS50}
+\end{tabularx}
+\vspace{2pt}
+{\color[HTML]{3A3A3A}\fontsize{11}{14}\selectfont Completed \ulink{https://cs50.harvard.edu/certificates/b14b78df-e05c-413e-a607-1dd27303053a}{CS50x}, \ulink{https://cs50.harvard.edu/certificates/32477052-9db4-49c4-a5a4-d7e58429ca2c}{CS50P}, \ulink{https://cs50.harvard.edu/certificates/9cdb4d4a-1250-4f8e-9fd7-191864e0f919}{CS50AI}, \ulink{https://cs50.harvard.edu/certificates/bc486f24-f085-4e61-8536-80940b97a1b9}{CS50SQL}, and \ulink{https://cs50.harvard.edu/certificates/666838e6-a053-4d82-b179-a60fe745fd84}{CS50R} covering Python, SQL, algorithms, AI, and full-stack application development.}
+
+%---- SKILLS ----
+\section{Skills}
+\vspace{2pt}
+{\color[HTML]{0A0A0A}\fontsize{11}{14}\selectfont
+\textbf{Languages:} Python, Java, JavaScript, TypeScript, SQL, R \\[2pt]
+\textbf{Cloud Platforms:} Google Cloud Platform (GCP), AWS (Lambda, S3, RDS, EKS, EventBridge), Azure, Docker, Kubernetes, Terraform \\[2pt]
+\textbf{Application Development:} FastAPI, Node.js, REST APIs, WebSockets, React, Next.js, Full-Stack SDLC, CI/CD, Integration Testing, UAT, Documentation \\[2pt]
+\textbf{Data Engineering \& Pipelines:} Apache Kafka, Apache Spark, Apache Airflow, dbt, ETL, PostgreSQL, Redis, Delta Lake, Web-Scale Data Processing \\[2pt]
+\textbf{Enterprise \& Business Systems:} Financial Planning \& Analysis, Business Process Automation, Requirements Gathering, Stakeholder Management, Vendor Integration, Production Support
+}
+
+\vspace{2pt}
+
+%---- PROJECTS ----
+\section{Projects}
+\vspace{2pt}
+
+\begin{tabularx}{\linewidth}{@{}X R@{}}
+  \subheading{Cloud Cost Optimization Dashboard} &
+  \meta{\ulink{https://github.com/su-jin1425/Cloud-Cost-Optimization-Dashboard}{GitHub}}
+\end{tabularx}
+\vspace{1pt}
+\techstack{Python, FastAPI, GCP SDK, AWS Boto3, Azure SDK, Scikit-learn, Prophet, PostgreSQL, Redis, Docker, Prometheus, Grafana}
+\begin{itemize}[nosep, leftmargin=1.5em, itemsep=1pt, topsep=2pt]
+  \item {\color[HTML]{0A0A0A}\fontsize{11}{14}\selectfont Built a FinOps platform integrating native billing APIs across GCP, AWS, and Azure; delivered unified financial planning dashboards, budget monitoring, Kubernetes cost allocation, idle resource detection, rightsizing recommendations, and seasonal cost forecasting models supporting enterprise-scale financial analysis and infrastructure governance.}
+\end{itemize}
+
+\vspace{4pt}
+
+\begin{tabularx}{\linewidth}{@{}X R@{}}
+  \subheading{Real-Time Stock Market Data Pipeline} &
+  \meta{\ulink{https://github.com/su-jin1425/Real-Time-Stock-Market-Data-Pipeline}{GitHub}}
+\end{tabularx}
+\vspace{1pt}
+\techstack{Python, Apache Kafka, Spark Streaming, Apache Airflow, dbt, FastAPI, PostgreSQL, Redis, Docker, Prometheus, Grafana}
+\begin{itemize}[nosep, leftmargin=1.5em, itemsep=1pt, topsep=2pt]
+  \item {\color[HTML]{0A0A0A}\fontsize{11}{14}\selectfont Engineered a web-scale financial data pipeline processing millions of market events per day; built high-throughput Kafka ingestion, distributed Spark Streaming transformations, Airflow-orchestrated ETL workflows, dbt warehouse models, anomaly detection, and REST API endpoints for real-time financial reporting and business intelligence.}
+\end{itemize}
+
+\vspace{4pt}
+
+\begin{tabularx}{\linewidth}{@{}X R@{}}
+  \subheading{Smart Local Business Inventory \& Billing System} &
+  \meta{\ulink{https://github.com/su-jin1425/Smart-Local-Business-Inventory-Billing-System}{GitHub}}
+\end{tabularx}
+\vspace{1pt}
+\techstack{React, Next.js, TypeScript, Node.js, FastAPI, PostgreSQL, Redis, AWS S3, Docker, Prometheus, Grafana}
+\begin{itemize}[nosep, leftmargin=1.5em, itemsep=1pt, topsep=2pt]
+  \item {\color[HTML]{0A0A0A}\fontsize{11}{14}\selectfont Developed a production-grade internal business application covering product catalog management, GST-enabled invoice generation, tax calculation, payment tracking, customer management, and KPI dashboards; implemented real-time inventory synchronization via Redis Pub/Sub and WebSockets, conducted integration and regression testing, and maintained end-to-end documentation across the full SDLC.}
+\end{itemize}
+
+\vspace{4pt}
+
+\begin{tabularx}{\linewidth}{@{}X R@{}}
+  \subheading{ETL Pipeline for E-Commerce Analytics} &
+  \meta{\ulink{https://github.com/su-jin1425/ETL-Pipeline-for-E-Commerce-Analytics}{GitHub}}
+\end{tabularx}
+\vspace{1pt}
+\techstack{Python, Apache Airflow, dbt, FastAPI, PostgreSQL, Redis, Celery, Pandas, Docker, Prometheus, Grafana}
+\begin{itemize}[nosep, leftmargin=1.5em, itemsep=1pt, topsep=2pt]
+  \item {\color[HTML]{0A0A0A}\fontsize{11}{14}\selectfont Designed production ETL pipelines integrating APIs, CSV sources, transactional databases, and payment gateways; built dbt star schema warehouse models generating financial KPIs --- revenue analytics, CLV, conversion rates --- with data quality validation, automated reporting dashboards, and comprehensive pipeline monitoring.}
+\end{itemize}
+
+\vspace{2pt}
+
+%---- WORK EXPERIENCE ----
+\section{Work Experience}
+\vspace{2pt}
+
+\begin{tabularx}{\linewidth}{@{}X R@{}}
+  \subheading{Founder} &
+  \meta{\ulink{https://shoot-the-breeze.vercel.app}{Shoot the Breeze} $|$ 2023 -- Present}
+\end{tabularx}
+\begin{itemize}[nosep, leftmargin=1.5em, itemsep=1pt, topsep=2pt]
+  \item {\color[HTML]{0A0A0A}\fontsize{11}{14}\selectfont Led full SDLC --- requirements gathering, system design, implementation, integration testing, UAT, documentation, and ongoing support --- for production internal applications integrating third-party services and vendor APIs; set technical direction, maintained deployment pipelines, and delivered repeatable quality across Python and FastAPI-based backend infrastructure.}
+\end{itemize}
+
+\vspace{4pt}
+
+\begin{tabularx}{\linewidth}{@{}X R@{}}
+  \subheading{App/Web Developer} &
+  \meta{\ulink{https://sites.google.com/view/cropsky/home}{CropSky} $|$ VIT-TBI Research \& Innovation Hub $|$ 2024 -- Present}
+\end{tabularx}
+\begin{itemize}[nosep, leftmargin=1.5em, itemsep=1pt, topsep=2pt]
+  \item {\color[HTML]{0A0A0A}\fontsize{11}{14}\selectfont Partnered with cross-functional research scientists and engineers to gather stakeholder requirements, design scalable REST API and backend architectures, and deliver production-ready features on repeatable schedules; contributed to system road maps, regression testing, and technical documentation at a university-incubated startup.}
+\end{itemize}
+
+\vspace{2pt}
+
+%---- RESEARCH & PUBLICATIONS ----
+\section{Research \& Publications}
+\vspace{2pt}
+
+\begin{itemize}[nosep, leftmargin=1.5em, itemsep=1pt, topsep=1pt]
+  \item {\color[HTML]{0A0A0A}\fontsize{11}{14}\selectfont
+    \textbf{Stock Market Analysis and Prediction using Machine Learning} ---
+    \ulink{https://www.elruha.org/_files/ugd/614b1f_6b95e1b697bf452b9907ba46e0151c05.pdf\#page=774}{El Ruha International Conference}, 14\textsuperscript{th} Proceedings, pp.\ 730--740, 2025.
+    Engineered end-to-end ML pipelines for financial time-series forecasting; designed feature engineering stages and benchmarked predictive models across real-world market regimes.
+    \ulink{https://github.com/su-jin1425/Set-Project}{[Code]}\ \ulink{https://www.elruha.org/congress-books}{[Proceedings]}
+  }
+\end{itemize}
+
+\vspace{2pt}
+
+%---- CERTIFICATIONS & ACHIEVEMENTS ----
+\section{Certifications \& Achievements}
+\vspace{2pt}
+
+\begin{tabularx}{\linewidth}{@{}X X@{}}
+  \begin{itemize}[nosep, leftmargin=1.5em, itemsep=2pt, topsep=0pt]
+    \item {\color[HTML]{0A0A0A}\fontsize{11}{14}\selectfont\ulink{https://www.credly.com/badges/b225846a-6eda-43e7-8c19-e016faf8139c}{\textbf{Google Generative AI Leader}}}
+    \item {\color[HTML]{0A0A0A}\fontsize{11}{14}\selectfont\ulink{https://www.credly.com/badges/5fff07ae-3c3f-4e08-a3a4-6e014a32f6ca}{\textbf{Google Cloud Computing Foundations}}}
+    \item {\color[HTML]{0A0A0A}\fontsize{11}{14}\selectfont\ulink{https://www.freecodecamp.org/certification/su-jin/full-stack}{\textbf{FreeCodeCamp Legacy Full Stack}}}
+  \end{itemize}
+  &
+  \begin{itemize}[nosep, leftmargin=1.5em, itemsep=2pt, topsep=0pt]
+    \item {\color[HTML]{0A0A0A}\fontsize{11}{14}\selectfont\ulink{https://catalog-education.oracle.com/ords/certview/sharebadge?id=8A188574B53FD87EB9A79BC2A5D51B1F6615D7E7B917A20D727F58032D75AD4A}{\textbf{OCI 2025 Certified Developer Professional}}}
+    \item {\color[HTML]{0A0A0A}\fontsize{11}{14}\selectfont AWS \ulink{https://www.credly.com/badges/ee736e9c-48e5-4c68-9531-a910037530d3}{\textbf{Solutions Architect}} and \ulink{https://www.credly.com/badges/af108ef6-8d45-4bfb-b7a7-ebb3dddb13a4}{\textbf{Developer}}}
+    \item {\color[HTML]{0A0A0A}\fontsize{11}{14}\selectfont\ulink{https://www.hackerrank.com/certificates/fb16161c9761}{\textbf{Software Engineer Certification -- HackerRank}}}
+  \end{itemize}
+\end{tabularx}
+
+\end{document}
