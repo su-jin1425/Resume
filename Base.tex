@@ -1,0 +1,236 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage{parskip}
+\usepackage{hologo}
+\usepackage{fontspec}
+\RequirePackage{color}
+\RequirePackage{graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[scale=0.88, top=.4in, bottom=.4in, left=0.5in, right=0.5in]{geometry}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}
+\usepackage{supertabular}
+\usepackage{titlesec}
+\usepackage{multicol}
+\usepackage{multirow}
+
+% Section: bold + small caps, rule below
+\titleformat{\section}
+  {\fontsize{15}{17}\selectfont\bfseries\scshape\raggedright}
+  {}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{8pt}{5pt}
+
+\usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
+\usepackage[unicode, draft=false]{hyperref}
+\hypersetup{
+  colorlinks=true,
+  urlcolor=[HTML]{1A6FB5},
+  linkcolor=[HTML]{1A6FB5},
+  citecolor=black
+}
+\addbibresource{citations.bib}
+\setlength\bibitemsep{1em}
+\setlength{\parskip}{0pt}
+\usepackage{fontawesome5}
+\usepackage[normalem]{ulem}
+\setmainfont{Josefin Sans}[
+  BoldFont={Josefin Sans Bold},
+  ItalicFont={Josefin Sans Italic},
+  BoldItalicFont={Josefin Sans Bold Italic}
+]
+
+% Underlined colored hyperlink
+\newcommand{\ulink}[2]{\href{#1}{\uline{#2}}}
+
+% 12pt bold black — project/job/degree names
+\newcommand{\subheading}[1]{{\color[HTML]{0A0A0A}\fontsize{12}{14}\selectfont\bfseries #1}}
+
+% 10.5pt gray italic — tech stacks
+\newcommand{\techstack}[1]{{\color[HTML]{5C5C5C}\fontsize{10.5}{12.5}\selectfont\itshape #1}}
+
+% 10.5pt gray — dates, company names, right-side meta
+\newcommand{\meta}[1]{{\color[HTML]{5C5C5C}\fontsize{10.5}{12.5}\selectfont #1}}
+
+\begin{document}
+\pagestyle{empty}
+
+%---- HEADER ----
+\begin{tabularx}{\linewidth}{@{} C @{}}
+  {\color[HTML]{000000}\fontsize{30}{35}\selectfont\bfseries Sujith S} \\[5pt]
+  {\fontsize{10.5}{12.5}\selectfont\color[HTML]{3A3A3A}Software Engineer $|$ Data Structures $\bullet$ Algorithms $\bullet$ Distributed Systems $\bullet$ Backend Engineering} \\[7pt]
+  {\fontsize{10.5}{12.5}\selectfont
+    \textcolor[HTML]{3A3A3A}{%
+    {\rotatebox[origin=c]{-90}{\faPhone}}\ +91 9843579926
+    \quad
+    {\faEnvelope}\ sujithssd14@gmail.com
+    \quad
+    \ulink{https://github.com/su-jin1425}{{\faGithub}\ su-jin1425}
+    \quad
+    \ulink{https://sujith1425.vercel.app}{{\faGlobe}\ sujith1425.vercel.app}
+    \quad
+    \ulink{https://linkedin.com/in/sujith14}{{\faLinkedin}\ sujith14}
+    }
+}
+\end{tabularx}
+
+\vspace{4pt}
+
+%---- PROFESSIONAL SUMMARY ----
+\section{Professional Summary}
+\vspace{2pt}
+{\color[HTML]{0A0A0A}\fontsize{11}{15}\selectfont
+Software Engineering student with experience building scalable software systems, distributed applications, and backend services using Python, JavaScript, FastAPI, React, and SQL. Strong foundation in data structures, algorithms, software design, and developing reliable, high-performance applications.
+}
+
+\vspace{4pt}
+
+%---- SKILLS ----
+\section{Skills}
+\vspace{3pt}
+{\color[HTML]{0A0A0A}\fontsize{11}{15}\selectfont
+\textbf{Programming:} Python, Java, JavaScript, SQL, TypeScript \\[4pt]
+\textbf{Software Engineering:} Data Structures \& Algorithms, Object-Oriented Programming, Software Design, Distributed Systems, Concurrency, REST APIs \\[4pt]
+\textbf{Frameworks \& Databases:} FastAPI, React, Next.js, PostgreSQL, MySQL, MongoDB, Redis \\[4pt]
+\textbf{Tools \& Technologies:} Git, GitHub, Linux, Docker, CI/CD, Machine Learning
+}
+
+\vspace{4pt}
+
+%---- PROJECTS ----
+\section{Projects}
+\vspace{3pt}
+
+\begin{tabularx}{\linewidth}{@{}X R@{}}
+  \subheading{Distributed Collaboration Platform} &
+  \meta{\ulink{https://github.com/su-jin1425/distributed-collaboration-platform}{GitHub} $|$ \ulink{https://distributed-collaboration-platform.vercel.app}{Live Demo}}
+\end{tabularx}
+\vspace{1pt}
+\techstack{Next.js, React, TypeScript, WebSockets, Redis Pub/Sub, PostgreSQL}
+\begin{itemize}[nosep, leftmargin=1.5em, itemsep=2pt, topsep=3pt]
+  \item {\color[HTML]{0A0A0A}\fontsize{11}{15}\selectfont Reduced synchronization latency by 40\% by developing a distributed real-time collaboration platform using WebSockets, Redis Pub/Sub, and PostgreSQL.}
+  \item {\color[HTML]{0A0A0A}\fontsize{11}{15}\selectfont Improved system scalability by designing event-driven backend services supporting concurrent multi-user collaboration.}
+\end{itemize}
+
+\vspace{6pt}
+
+\begin{tabularx}{\linewidth}{@{}X R@{}}
+  \subheading{AI Workflow Automation Platform} &
+  \meta{\ulink{https://github.com/su-jin1425/ai-workflow-automation-platform}{GitHub} $|$ \ulink{https://ai-workflow-automation-platform.vercel.app}{Live Demo}}
+\end{tabularx}
+\vspace{1pt}
+\techstack{Next.js, React Flow, FastAPI, PostgreSQL, Redis, LangChain}
+\begin{itemize}[nosep, leftmargin=1.5em, itemsep=2pt, topsep=3pt]
+  \item {\color[HTML]{0A0A0A}\fontsize{11}{15}\selectfont Improved workflow execution efficiency by 45\% by developing an AI-powered automation platform using FastAPI, PostgreSQL, and Redis.}
+  \item {\color[HTML]{0A0A0A}\fontsize{11}{15}\selectfont Increased system reliability by implementing asynchronous REST APIs and scalable backend processing.}
+\end{itemize}
+
+\vspace{6pt}
+
+\begin{tabularx}{\linewidth}{@{}X R@{}}
+  \subheading{Distributed Chat System} &
+  \meta{\ulink{https://github.com/su-jin1425/distributed-chat-system}{GitHub} $|$ \ulink{https://distributed-chat-system.vercel.app}{Live Demo}}
+\end{tabularx}
+\vspace{1pt}
+\techstack{Next.js, Node.js, Socket.IO, Redis, PostgreSQL}
+\begin{itemize}[nosep, leftmargin=1.5em, itemsep=2pt, topsep=3pt]
+  \item {\color[HTML]{0A0A0A}\fontsize{11}{15}\selectfont Improved message delivery performance by 35\% by building a distributed real-time chat system using Socket.IO, Redis, and PostgreSQL.}
+  \item {\color[HTML]{0A0A0A}\fontsize{11}{15}\selectfont Increased application scalability through event-driven communication and optimized backend architecture.}
+\end{itemize}
+
+\vspace{6pt}
+
+\begin{tabularx}{\linewidth}{@{}X R@{}}
+  \subheading{Smart Local Business Inventory \& Billing System} &
+  \meta{\ulink{https://github.com/su-jin1425/smart-local-business-inventory}{GitHub} $|$ \ulink{https://smart-local-business-inventory.vercel.app}{Live Demo}}
+\end{tabularx}
+\vspace{1pt}
+\techstack{React, Next.js, Node.js, PostgreSQL, Redis, Docker}
+\begin{itemize}[nosep, leftmargin=1.5em, itemsep=2pt, topsep=3pt]
+  \item {\color[HTML]{0A0A0A}\fontsize{11}{15}\selectfont Improved operational efficiency by 50\% by developing a full-stack inventory and billing platform using React, Node.js, and PostgreSQL.}
+  \item {\color[HTML]{0A0A0A}\fontsize{11}{15}\selectfont Reduced processing time through automated inventory tracking, optimized REST APIs, and efficient database design.}
+\end{itemize}
+
+\vspace{6pt}
+
+\subheading{Open Source Contribution}
+\begin{itemize}[nosep, leftmargin=1.5em, itemsep=2pt, topsep=3pt]
+  \item {\color[HTML]{0A0A0A}\fontsize{11}{15}\selectfont Actively exploring open-source ecosystems and cloud-native technologies through continuous learning and community engagement.}
+\end{itemize}
+
+\vspace{4pt}
+
+\newpage
+%---- WORK EXPERIENCE ----
+\section{Work Experience}
+\vspace{3pt}
+
+\begin{tabularx}{\linewidth}{@{}X R@{}}
+  \subheading{Founder} &
+  \meta{\ulink{https://shootthebreeze.com}{Shoot the Breeze} $|$ 2023 -- Present}
+\end{tabularx}
+\begin{itemize}[nosep, leftmargin=1.5em, itemsep=2pt, topsep=3pt]
+  \item {\color[HTML]{0A0A0A}\fontsize{11}{15}\selectfont Developed scalable software applications and backend services using Python, FastAPI, React, and PostgreSQL, improving application performance through optimized API and database design.}
+  \item {\color[HTML]{0A0A0A}\fontsize{11}{15}\selectfont Led end-to-end software development by designing system architecture, implementing features, debugging issues, and deploying full-stack applications.}
+\end{itemize}
+
+\vspace{6pt}
+
+\begin{tabularx}{\linewidth}{@{}X R@{}}
+  \subheading{App/Web Developer} &
+  \meta{\ulink{https://cropsky.in}{CropSky} $|$ Pre-incubated at VIT-TBI $|$ 2024 -- Present}
+\end{tabularx}
+\begin{itemize}[nosep, leftmargin=1.5em, itemsep=2pt, topsep=3pt]
+  \item {\color[HTML]{0A0A0A}\fontsize{11}{15}\selectfont Developed backend features and REST APIs supporting scalable web applications, improving application reliability and maintainability.}
+  \item {\color[HTML]{0A0A0A}\fontsize{11}{15}\selectfont Collaborated with cross-functional teams to implement features, debug applications, and optimize backend performance.}
+\end{itemize}
+
+\vspace{4pt}
+
+%---- CERTIFICATIONS ----
+\section{Certifications \& Achievements}
+\vspace{3pt}
+
+\begin{tabularx}{\linewidth}{@{}X X@{}}
+  \begin{itemize}[nosep, leftmargin=1.5em, itemsep=3pt, topsep=0pt]
+    \item {\color[HTML]{0A0A0A}\fontsize{11}{15}\selectfont\ulink{https://www.credly.com/badges/b225846a-6eda-43e7-8c19-e016faf8139c}{\textbf{Google Generative AI Leader}}}
+    \item {\color[HTML]{0A0A0A}\fontsize{11}{15}\selectfont\ulink{https://www.freecodecamp.org/certification/su-jin/full-stack}{\textbf{FreeCodeCamp Legacy Full Stack}}}
+    \item {\color[HTML]{0A0A0A}\fontsize{11}{15}\selectfont\ulink{https://www.credly.com/badges/5fff07ae-3c3f-4e08-a3a4-6e014a32f6ca}{\textbf{Google Cloud Computing Foundations}}}
+  \end{itemize}
+  &
+  \begin{itemize}[nosep, leftmargin=1.5em, itemsep=3pt, topsep=0pt]
+    \item {\color[HTML]{0A0A0A}\fontsize{11}{15}\selectfont\ulink{https://catalog-education.oracle.com/ords/certview/sharebadge?id=8A188574B53FD87EB9A79BC2A5D51B1F6615D7E7B917A20D727F58032D75AD4A}{\textbf{OCI 2025 Certified Developer Professional}}}
+    \item {\color[HTML]{0A0A0A}\fontsize{11}{15}\selectfont AWS \ulink{https://www.credly.com/badges/ee736e9c-48e5-4c68-9531-a910037530d3}{\textbf{Solutions Architect}} and \ulink{https://www.credly.com/badges/af108ef6-8d45-4bfb-b7a7-ebb3dddb13a4}{\textbf{Developer}}}
+    \item {\color[HTML]{0A0A0A}\fontsize{11}{15}\selectfont\ulink{https://www.hackerrank.com/certificates/fb16161c9761}{\textbf{Software Engineer Cert -- HackerRank}}}
+  \end{itemize}
+\end{tabularx}
+
+\vspace{2pt}
+
+\begin{itemize}[nosep, leftmargin=1.5em, itemsep=2pt, topsep=3pt]
+  \item {\color[HTML]{0A0A0A}\fontsize{11}{15}\selectfont Published a \ulink{https://www.elruha.org/congress-books}{research paper} on \ulink{https://github.com/su-jin1425/Set-Project}{stock market analysis and prediction} in the 14\textsuperscript{th} proceedings of the \ulink{https://www.elruha.org/_files/ugd/614b1f_6b95e1b697bf452b9907ba46e0151c05.pdf\#page=774}{El Ruha International Conference on Scientific Research}, pp.\ 730--740, 2025.}
+\end{itemize}
+
+\vspace{4pt}
+
+%---- EDUCATION ----
+\section{Education}
+\vspace{3pt}
+
+\begin{tabularx}{\linewidth}{@{}p{0.62\linewidth} R@{}}
+  \subheading{Int.Msc Computational Statistics and Data Analytics} &
+  \meta{VIT University $|$ 2022--2027}
+\end{tabularx}
+\vspace{2pt}
+{\color[HTML]{3A3A3A}\fontsize{11}{15}\selectfont Relevant Coursework: Data Structures \& Algorithms, Object-Oriented Programming, DBMS, Operating Systems, Computer Networks, Software Engineering, Machine Learning}
+
+\vspace{6pt}
+
+\begin{tabularx}{\linewidth}{@{}X R@{}}
+  \subheading{CS50 Programs} &
+  \meta{Harvard University $|$ CS50}
+\end{tabularx}
+\vspace{2pt}
+{\color[HTML]{3A3A3A}\fontsize{11}{15}\selectfont Completed Harvard University CS50 programs including \ulink{https://cs50.harvard.edu/certificates/b14b78df-e05c-413e-a607-1dd27303053a}{CS50x}, \ulink{https://cs50.harvard.edu/certificates/32477052-9db4-49c4-a5a4-d7e58429ca2c}{CS50P}, \ulink{https://cs50.harvard.edu/certificates/9cdb4d4a-1250-4f8e-9fd7-191864e0f919}{CS50AI}, \ulink{https://cs50.harvard.edu/certificates/bc486f24-f085-4e61-8536-80940b97a1b9}{CS50SQL}, and \ulink{https://cs50.harvard.edu/certificates/666838e6-a053-4d82-b179-a60fe745fd84}{CS50R}, gaining hands-on experience in algorithms, Python, SQL, software engineering, backend development, and computational problem solving.}
+
+\end{document}
