@@ -1,0 +1,177 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage{parskip}
+\usepackage{fontspec}
+\RequirePackage{color}
+\RequirePackage{graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[scale=0.88, top=.4in, bottom=.4in, left=0.5in, right=0.5in]{geometry}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}
+\usepackage{supertabular}
+\usepackage{titlesec}
+\usepackage{multicol}
+\usepackage{multirow}
+
+\titleformat{\section}{\fontsize{15}{17}\selectfont\bfseries\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{6pt}{3pt}
+
+\usepackage[unicode, draft=false]{hyperref}
+\hypersetup{colorlinks=true, urlcolor=[HTML]{1A6FB5}, linkcolor=[HTML]{1A6FB5}}
+\setlength{\parskip}{0pt}
+\usepackage[normalem]{ulem}
+\setmainfont{Josefin Sans}[
+  BoldFont={Josefin Sans Bold},
+  ItalicFont={Josefin Sans Italic},
+  BoldItalicFont={Josefin Sans Bold Italic}
+]
+
+\newcommand{\ulink}[2]{\href{#1}{\uline{#2}}}
+\newcommand{\subheading}[1]{{\color[HTML]{0A0A0A}\fontsize{12}{14}\selectfont\bfseries #1}}
+\newcommand{\techstack}[1]{{\color[HTML]{5C5C5C}\fontsize{10.5}{12.5}\selectfont\itshape #1}}
+\newcommand{\meta}[1]{{\color[HTML]{5C5C5C}\fontsize{10.5}{12.5}\selectfont #1}}
+
+\begin{document}
+\pagestyle{empty}
+
+\begin{tabularx}{\linewidth}{@{} C @{}}
+{\color[HTML]{000000}\fontsize{30}{35}\selectfont\bfseries Sujith S} \\[5pt]
+{\fontsize{10.5}{12.5}\selectfont\color[HTML]{3A3A3A}
+System Development Engineer $|$ Java $\cdot$ Python $\cdot$ AWS $\cdot$ CI/CD $\cdot$ Cloud Infrastructure} \\[6pt]
+{\fontsize{10.5}{12.5}\selectfont\textcolor[HTML]{3A3A3A}{
++91 9843579926 $|$
+sujithssd14@gmail.com $|$
+\ulink{https://github.com/su-jin1425}{github.com/su-jin1425} $|$
+\ulink{https://linkedin.com/in/sujith14}{linkedin.com/in/sujith14} $|$
+\ulink{https://sujith1425.vercel.app}{sujith1425.vercel.app}}}
+\end{tabularx}
+
+\vspace{2pt}
+
+\section{Summary}
+\vspace{2pt}
+{\color[HTML]{0A0A0A}\fontsize{11}{14}\selectfont
+Computational Statistics and Data Analytics student at VIT University (2022--2027) with hands-on experience building, deploying, and automating production-grade backend systems on AWS. Proficient in Java and Python; applied experience in REST API development, CI/CD pipelines, Docker-based deployment, distributed data pipelines (Kafka, Spark), and PostgreSQL/Redis infrastructure. Track record of owning technical components end-to-end across the full SDLC, automating repetitive operational processes, troubleshooting root causes, and collaborating cross-functionally to improve system reliability, operational performance, and stability.}
+
+\vspace{2pt}
+
+\section{Education}
+\vspace{2pt}
+
+\begin{tabularx}{\linewidth}{@{}p{0.62\linewidth} R@{}}
+\subheading{Int.MSc Computational Statistics and Data Analytics} & \meta{VIT University $|$ 2022--2027}
+\end{tabularx}
+\vspace{2pt}
+{\color[HTML]{3A3A3A}\fontsize{11}{14}\selectfont Relevant Coursework: Data Structures \& Algorithms, Software Engineering, Distributed Systems, Cloud Computing, Database Systems, Computer Networks, Machine Learning, Statistical Modeling}
+
+\begin{tabularx}{\linewidth}{@{}p{0.62\linewidth} R@{}}
+\subheading{CS50 Programs} & \meta{Harvard CS50 (Online)}
+\end{tabularx}
+\vspace{2pt}
+{\color[HTML]{3A3A3A}\fontsize{11}{14}\selectfont Completed \ulink{https://cs50.harvard.edu/certificates/b14b78df-e05c-413e-a607-1dd27303053a}{CS50x}, \ulink{https://cs50.harvard.edu/certificates/32477052-9db4-49c4-a5a4-d7e58429ca2c}{CS50P}, \ulink{https://cs50.harvard.edu/certificates/9cdb4d4a-1250-4f8e-9fd7-191864e0f919}{CS50AI}, \ulink{https://cs50.harvard.edu/certificates/bc486f24-f085-4e61-8536-80940b97a1b9}{CS50SQL}, and \ulink{https://cs50.harvard.edu/certificates/666838e6-a053-4d82-b179-a60fe745fd84}{CS50R} covering algorithms, full-stack development, SQL, Python, and AI fundamentals.}
+
+\vspace{2pt}
+
+\section{Skills}
+\vspace{2pt}
+{\color[HTML]{0A0A0A}\fontsize{11}{14}\selectfont
+\textbf{Languages:} Java, Python, SQL, JavaScript, TypeScript, R \\[2pt]
+\textbf{Cloud \& Infrastructure:} AWS (Lambda, S3, RDS, EKS, EventBridge), GCP, Azure, Docker, CI/CD Pipelines, Infrastructure Automation, Build/Release Automation \\[2pt]
+\textbf{Backend \& APIs:} FastAPI, REST APIs, PostgreSQL, Redis, Apache Kafka, Apache Spark, Apache Airflow, dbt \\[2pt]
+\textbf{Automation \& DevOps:} Deployment Automation, Pipeline Automation, MLflow, System Monitoring, Troubleshooting, Root Cause Analysis \\[2pt]
+\textbf{ML \& Data:} Scikit-learn, XGBoost, LangChain, LangGraph, Hugging Face Transformers, Pandas, NumPy, Statistical Analysis}
+
+\vspace{2pt}
+
+\section{Projects}
+\vspace{2pt}
+
+\begin{tabularx}{\linewidth}{@{}X R@{}}
+\subheading{Social Media Sentiment Lakehouse} & \meta{\ulink{https://github.com/su-jin1425/Social-Media-Sentiment-Lakehouse}{GitHub}}
+\end{tabularx}
+\vspace{1pt}
+\techstack{Python, Apache Kafka, Apache Spark Streaming, Delta Lake, Hugging Face Transformers, Scikit-learn, MLflow, FastAPI, PostgreSQL, Docker, AWS}
+\begin{itemize}[nosep, leftmargin=1.5em, itemsep=1pt, topsep=2pt]
+\item {\color[HTML]{0A0A0A}\fontsize{11}{14}\selectfont
+Designed and deployed an end-to-end real-time streaming pipeline using Apache Kafka and Apache Spark Streaming for high-throughput distributed data ingestion and processing; managed Docker-containerized service deployments with PostgreSQL and Delta Lake sinks, maintaining operational stability and data consistency across components.}
+\item {\color[HTML]{0A0A0A}\fontsize{11}{14}\selectfont
+Implemented automated NLP classification pipelines for real-time sentiment analysis at scale; built pipeline monitoring and failure alerting to enable automated recovery and reduce manual intervention; benchmarked model performance across classification approaches using MLflow.}
+\end{itemize}
+
+\vspace{4pt}
+
+\begin{tabularx}{\linewidth}{@{}X R@{}}
+\subheading{Demand Forecasting System} & \meta{\ulink{https://github.com/su-jin1425/Demand-Forecasting-System}{GitHub}}
+\end{tabularx}
+\vspace{1pt}
+\techstack{Python, Scikit-learn, XGBoost, Prophet, FastAPI, PostgreSQL, Redis, MLflow, Docker, AWS}
+\begin{itemize}[nosep, leftmargin=1.5em, itemsep=1pt, topsep=2pt]
+\item {\color[HTML]{0A0A0A}\fontsize{11}{14}\selectfont
+Architected and deployed production-grade REST APIs using FastAPI and Docker on AWS; designed PostgreSQL schema and Redis caching layer for high-concurrency request handling; implemented staging-to-production deployment workflows with automated validation checks, ensuring reliable system rollout.}
+\item {\color[HTML]{0A0A0A}\fontsize{11}{14}\selectfont
+Built automated model retraining pipelines with drift detection, confidence interval estimation, and experiment tracking via MLflow; automated build, test, and release processes to eliminate manual deployment steps and improve operational reproducibility across model versions.}
+\end{itemize}
+\newpage
+\vspace{4pt}
+
+\begin{tabularx}{\linewidth}{@{}X R@{}}
+\subheading{Autonomous Research Agent} & \meta{\ulink{https://github.com/su-jin1425/Autonomous-Research-Agent}{GitHub}}
+\end{tabularx}
+\vspace{1pt}
+\techstack{Python, LangChain, LangGraph, OpenAI APIs, FAISS, ChromaDB, FastAPI, PostgreSQL, Redis, Docker, AWS}
+\begin{itemize}[nosep, leftmargin=1.5em, itemsep=1pt, topsep=2pt]
+\item {\color[HTML]{0A0A0A}\fontsize{11}{14}\selectfont
+Designed and deployed a distributed multi-service system using FastAPI, PostgreSQL, Redis, and Docker on AWS; orchestrated modular service components with LangGraph for stateful multi-step execution; owned component-level design, implementation, testing, and production deployment end-to-end.}
+\item {\color[HTML]{0A0A0A}\fontsize{11}{14}\selectfont
+Developed REST API endpoints integrating vector search (FAISS, ChromaDB) for knowledge retrieval; automated evaluation and performance benchmarking pipelines; documented operational procedures and system performance metrics to support cross-team knowledge sharing and iterative system improvement.}
+\end{itemize}
+
+\vspace{2pt}
+
+\section{Work Experience}
+\vspace{2pt}
+
+\begin{tabularx}{\linewidth}{@{}X R@{}}
+\subheading{Founder} & \meta{\ulink{https://shoot-the-breeze.vercel.app}{Shoot the Breeze} $|$ 2023 -- Present}
+\end{tabularx}
+\begin{itemize}[nosep, leftmargin=1.5em, itemsep=1pt, topsep=2pt]
+\item {\color[HTML]{0A0A0A}\fontsize{11}{14}\selectfont
+Owned end-to-end SDLC for backend applications deployed on AWS: drove system design, implemented backend services in Python, managed Docker-based deployments across staging and production environments, and automated operational monitoring and incident response workflows; communicated technical trade-offs and status to cross-functional stakeholders.}
+\end{itemize}
+
+\vspace{4pt}
+
+\begin{tabularx}{\linewidth}{@{}X R@{}}
+\subheading{App/Web Developer} & \meta{\ulink{https://sites.google.com/view/cropsky/home}{CropSky} $|$ VIT-TBI Research \& Innovation Hub $|$ 2024 -- Present}
+\end{tabularx}
+\begin{itemize}[nosep, leftmargin=1.5em, itemsep=1pt, topsep=2pt]
+\item {\color[HTML]{0A0A0A}\fontsize{11}{14}\selectfont
+Developed and deployed scalable REST APIs and backend systems at a university-incubated research startup; implemented CI/CD pipelines and automated build and release processes to improve deployment reliability and reduce manual overhead; collaborated cross-functionally with engineers and researchers to translate operational requirements into production-ready system components.}
+\end{itemize}
+
+\vspace{2pt}
+
+\section{Certifications \& Achievements}
+\vspace{2pt}
+
+\begin{tabularx}{\linewidth}{@{}X X@{}}
+  \begin{itemize}[nosep, leftmargin=1.5em, itemsep=2pt, topsep=0pt]
+    \item {\color[HTML]{0A0A0A}\fontsize{11}{14}\selectfont\ulink{https://www.credly.com/badges/b225846a-6eda-43e7-8c19-e016faf8139c}{\textbf{Google Generative AI Leader}}}
+    \item {\color[HTML]{0A0A0A}\fontsize{11}{14}\selectfont\ulink{https://www.credly.com/badges/5fff07ae-3c3f-4e08-a3a4-6e014a32f6ca}{\textbf{Google Cloud Computing Foundations}}}
+    \item {\color[HTML]{0A0A0A}\fontsize{11}{14}\selectfont\ulink{https://www.freecodecamp.org/certification/su-jin/full-stack}{\textbf{FreeCodeCamp Legacy Full Stack}}}
+  \end{itemize}
+  &
+  \begin{itemize}[nosep, leftmargin=1.5em, itemsep=2pt, topsep=0pt]
+    \item {\color[HTML]{0A0A0A}\fontsize{11}{14}\selectfont\ulink{https://catalog-education.oracle.com/ords/certview/sharebadge?id=8A188574B53FD87EB9A79BC2A5D51B1F6615D7E7B917A20D727F58032D75AD4A}{\textbf{OCI 2025 Certified Developer Professional}}}
+    \item {\color[HTML]{0A0A0A}\fontsize{11}{14}\selectfont AWS \ulink{https://www.credly.com/badges/ee736e9c-48e5-4c68-9531-a910037530d3}{\textbf{Solutions Architect}} and \ulink{https://www.credly.com/badges/af108ef6-8d45-4bfb-b7a7-ebb3dddb13a4}{\textbf{Developer}}}
+    \item {\color[HTML]{0A0A0A}\fontsize{11}{14}\selectfont\ulink{https://www.hackerrank.com/certificates/fb16161c9761}{\textbf{Software Engineer Certification -- HackerRank}}}
+  \end{itemize}
+
+\end{tabularx}
+\begin{itemize}[nosep, leftmargin=1.5em, itemsep=1pt, topsep=2pt]
+\item {\color[HTML]{0A0A0A}\fontsize{11}{14}\selectfont
+Published a \ulink{https://www.elruha.org/_files/ugd/614b1f_6b95e1b697bf452b9907ba46e0151c05.pdf\#page=774}{research paper} on \ulink{https://github.com/su-jin1425/Set-Project}{stock market analysis and prediction} in the 14\textsuperscript{th} proceedings of the \ulink{https://www.elruha.org/congress-books}{El Ruha International Conference on Scientific Research}, pp.\ 730--740, 2025.}
+\end{itemize}
+
+\end{document}
