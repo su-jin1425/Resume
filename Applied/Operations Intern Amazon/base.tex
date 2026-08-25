@@ -1,0 +1,135 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage{parskip}
+\usepackage{fontspec}
+\RequirePackage{color}
+\RequirePackage{graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[scale=0.88, top=.4in, bottom=.4in, left=0.5in, right=0.5in]{geometry}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}
+\usepackage{supertabular}
+\usepackage{titlesec}
+\usepackage{multicol}
+\usepackage{multirow}
+
+\titleformat{\section}{\fontsize{15}{17}\selectfont\bfseries\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{4pt}{2pt}
+
+\usepackage[unicode, draft=false]{hyperref}
+\hypersetup{colorlinks=true, urlcolor=[HTML]{1A6FB5}, linkcolor=[HTML]{1A6FB5}}
+\setlength{\parskip}{0pt}
+\usepackage[normalem]{ulem}
+\setmainfont{Josefin Sans}[
+  BoldFont={Josefin Sans Bold},
+  ItalicFont={Josefin Sans Italic},
+  BoldItalicFont={Josefin Sans Bold Italic}
+]
+
+\newcommand{\ulink}[2]{\href{#1}{\uline{#2}}}
+\newcommand{\subheading}[1]{{\color[HTML]{0A0A0A}\fontsize{12}{14}\selectfont\bfseries #1}}
+\newcommand{\techstack}[1]{{\color[HTML]{5C5C5C}\fontsize{10.5}{12.5}\selectfont\itshape #1}}
+\newcommand{\meta}[1]{{\color[HTML]{5C5C5C}\fontsize{10.5}{12.5}\selectfont #1}}
+
+\begin{document}
+\pagestyle{empty}
+
+%---- HEADER ----
+\begin{tabularx}{\linewidth}{@{} C @{}}
+{\color[HTML]{000000}\fontsize{30}{35}\selectfont\bfseries Sujith S} \\[5pt]
+{\fontsize{10.5}{12.5}\selectfont\color[HTML]{3A3A3A}
+Operations Management $\cdot$ Data-Driven Problem Solving $\cdot$ Process Improvement} \\[6pt]
+{\fontsize{9.5}{11.5}\selectfont\textcolor[HTML]{3A3A3A}{+91 9843579926 $|$ sujithssd14@gmail.com $|$ \ulink{https://linkedin.com/in/sujith14}{linkedin.com/in/sujith14} $|$ \ulink{https://sujith1425.vercel.app}{sujith1425.vercel.app}}}
+\end{tabularx}
+
+\vspace{2pt}
+
+%---- SUMMARY ----
+\section{Summary}
+\vspace{3pt}
+{\color[HTML]{0A0A0A}\fontsize{11}{14}\selectfont
+Analytical and detail-oriented student graduating in 2027, passionate about solving complex operational bottlenecks. I thrive at the intersection of data analysis and project management, leveraging insights to pilot process improvements and reduce defects. I enjoy rolling up my sleeves to collaborate with cross-functional teams, implement continuous improvement strategies (like Kaizen and 5S), and ultimately deliver a world-class experience for end customers.}
+
+\vspace{2pt}
+
+%---- SKILLS ----
+\section{Skills}
+\vspace{3pt}
+{\color[HTML]{0A0A0A}\fontsize{11}{14}\selectfont
+\textbf{Operations \& Strategy:} Process Improvement, Project Management, Kaizen & LEAN Methodology, Cross-functional Leadership \\[2pt]
+\textbf{Data \& Analysis:} Extensive Data Analysis, Advanced Excel (Macros, Look-ups), Python, SQL \\[2pt]
+\textbf{Core Competencies:} Bottleneck Identification, Performance Auditing, Stakeholder Communication, Adaptability}
+
+\vspace{2pt}
+
+%---- WORK EXPERIENCE ----
+\section{Work Experience}
+\vspace{2pt}
+
+\begin{tabularx}{\linewidth}{@{}p{0.50\linewidth} R@{}}
+\subheading{App / Web Developer} & \meta{\ulink{https://sites.google.com/view/cropsky/home}{CropSky} $|$ VIT-TBI Research $|$ 2024 -- Present}
+\end{tabularx}
+\begin{itemize}[nosep, leftmargin=1.5em, itemsep=1pt, topsep=2pt]
+  \item {\color[HTML]{0A0A0A}\fontsize{11}{14}\selectfont Collaborated with agricultural experts to analyze spatial datasets, successfully identifying and eliminating \textbf{critical operational bottlenecks} in data pipelines.}
+  \item {\color[HTML]{0A0A0A}\fontsize{11}{14}\selectfont Recommended and piloted process improvements that \textbf{accelerated spatial data processing by 40\%}, ensuring high-quality data delivery for \textbf{3 major product launches}.}
+\end{itemize}
+
+\vspace{2pt}
+
+\begin{tabularx}{\linewidth}{@{}l R@{}}
+\subheading{Founder} & \meta{\ulink{https://shoot-the-breeze.vercel.app}{Shoot the Breeze} $|$ 2023 -- Present}
+\end{tabularx}
+\begin{itemize}[nosep, leftmargin=1.5em, itemsep=1pt, topsep=2pt]
+  \item {\color[HTML]{0A0A0A}\fontsize{11}{14}\selectfont Partnered with \textbf{15+ local business owners} to audit day-to-day operations, identifying inefficiencies that caused financial leakages and process delays.}
+  \item {\color[HTML]{0A0A0A}\fontsize{11}{14}\selectfont Developed and deployed custom operating plans, \textbf{reducing manual data entry defects by 60\%} and improving \textbf{customer service response times by 3x}.}
+\end{itemize}
+
+\vspace{2pt}
+
+%---- PROJECTS ----
+\section{Relevant Projects}
+\vspace{2pt}
+
+\begin{tabularx}{\linewidth}{@{}p{0.62\linewidth} R@{}}
+\subheading{\ulink{https://github.com/su-jin1425/Smart-Local-Business-Inventory-Billing-System}{Smart Local Business Inventory \& Billing System}} & \meta{Supply Chain \& Operations}
+\end{tabularx}
+\vspace{1pt}
+\techstack{Process Control, Advanced Excel (Macros/Look-ups), Data Dashboards, Performance Tracking}
+\begin{itemize}[nosep, leftmargin=1.5em, itemsep=1pt, topsep=2pt]
+  \item {\color[HTML]{0A0A0A}\fontsize{11}{14}\selectfont Designed a centralized system for local shops to track inventory levels, monitor supplier performance, and analyze sales trends to prevent stockouts during peak times.}
+  \item {\color[HTML]{0A0A0A}\fontsize{11}{14}\selectfont Created automated data reports using Excel Macros and custom dashboards to process daily operational metrics, helping shop owners make fast, data-backed supply chain decisions.}
+\end{itemize}
+
+\vspace{2pt}
+
+%---- EDUCATION ----
+\section{Education}
+\vspace{2pt}
+
+\begin{tabularx}{\linewidth}{@{}p{0.60\linewidth} R@{}}
+\subheading{Int.MSc Computational Statistics and Data Analytics} & \meta{VIT University $|$ 2022--2027}
+\end{tabularx}
+\vspace{1pt}
+{\color[HTML]{3A3A3A}\fontsize{11}{14}\selectfont \textbf{Year of Graduation: 2027 : 8.4/10 CGPA} $|$ Coursework includes Data Analysis, Statistics, and Optimization.}
+
+\vspace{1pt}
+
+\begin{tabularx}{\linewidth}{@{}p{0.60\linewidth} R@{}}
+\subheading{CS50 Programs} & \meta{Harvard University (Online)}
+\end{tabularx}
+\vspace{1pt}
+{\color[HTML]{3A3A3A}\fontsize{11}{14}\selectfont \ulink{https://cs50.harvard.edu/certificates/b14b78df-e05c-413e-a607-1dd27303053a}{CS50x}, \ulink{https://cs50.harvard.edu/certificates/32477052-9db4-49c4-a5a4-d7e58429ca2c}{CS50P}, \ulink{https://cs50.harvard.edu/certificates/9cdb4d4a-1250-4f8e-9fd7-191864e0f919}{CS50AI}, \ulink{https://cs50.harvard.edu/certificates/bc486f24-f085-4e61-8536-80940b97a1b9}{CS50SQL}, \ulink{https://cs50.harvard.edu/certificates/666838e6-a053-4d82-b179-a60fe745fd84}{CS50R}}
+
+\vspace{2pt}
+
+%---- LEADERSHIP \& ACHIEVEMENTS ----
+\section{Leadership \& Achievements}
+\vspace{2pt}
+\begin{itemize}[nosep, leftmargin=1.5em, itemsep=1pt, topsep=2pt]
+  \item {\color[HTML]{0A0A0A}\fontsize{11}{14}\selectfont \textbf{Team Collaboration} --- Led a cross-functional team to secure Rank 3 at the VIT Vellore Goldman Sachs India Hackathon 2026 (All India Rank 4979), successfully delegating tasks and managing strict project timelines.}
+  \item {\color[HTML]{0A0A0A}\fontsize{11}{14}\selectfont \textbf{Certifications} --- \ulink{https://www.credly.com/badges/ee736e9c-48e5-4c68-9531-a910037530d3}{AWS Solutions Architect}, \ulink{https://catalog-education.oracle.com/ords/certview/sharebadge?id=8A188574B53FD87EB9A79BC2A5D51B1F6615D7E7B917A20D727F58032D75AD4A}{OCI 2025 Certified Developer Professional}, and \ulink{https://www.credly.com/badges/b225846a-6eda-43e7-8c19-e016faf8139c}{Google Gen AI Leader}, demonstrating a strong ability to master complex cloud technologies.}
+  \item {\color[HTML]{0A0A0A}\fontsize{11}{14}\selectfont \ulink{https://github.com/su-jin1425/My-Open-Source-Contributions}{\textbf{Open Source Contributor}} --- Successfully resolved an unclear XGBoost failure in \textbf{Uber's CausalML} repository by diagnosing an OpenMP dependency issue, improving error messaging, and merging the fix upstream.}
+\end{itemize}
+
+\end{document}
