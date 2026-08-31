@@ -1,0 +1,144 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage{parskip}
+\usepackage{fontspec}
+\RequirePackage{color}
+\RequirePackage{graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[scale=0.88, top=.4in, bottom=.4in, left=0.5in, right=0.5in]{geometry}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}
+\usepackage{supertabular}
+\usepackage{titlesec}
+\usepackage{multicol}
+\usepackage{multirow}
+
+\titleformat{\section}{\fontsize{14}{16}\selectfont\bfseries\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{4pt}{2pt}
+
+\usepackage[unicode, draft=false]{hyperref}
+\hypersetup{colorlinks=true, urlcolor=[HTML]{1A6FB5}, linkcolor=[HTML]{1A6FB5}}
+\setlength{\parskip}{0pt}
+\usepackage[normalem]{ulem}
+\setmainfont{Josefin Sans}[
+  BoldFont={Josefin Sans Bold},
+  ItalicFont={Josefin Sans Italic},
+  BoldItalicFont={Josefin Sans Bold Italic}
+]
+
+\newcommand{\ulink}[2]{\href{#1}{\uline{#2}}}
+\newcommand{\subheading}[1]{{\color[HTML]{0A0A0A}\fontsize{12}{14}\selectfont\bfseries #1}}
+\newcommand{\techstack}[1]{{\color[HTML]{5C5C5C}\fontsize{10.5}{12.5}\selectfont\itshape #1}}
+\newcommand{\meta}[1]{{\color[HTML]{5C5C5C}\fontsize{10.5}{12.5}\selectfont #1}}
+
+\begin{document}
+\pagestyle{empty}
+
+%---- HEADER ----
+\begin{tabularx}{\linewidth}{@{} C @{}}
+{\color[HTML]{000000}\fontsize{30}{35}\selectfont\bfseries Sujith S} \\[5pt]
+{\fontsize{10.5}{12.5}\selectfont\color[HTML]{3A3A3A}
+Software Engineer $|$ Enterprise Platforms $\cdot$ Distributed Systems $\cdot$ Event-Driven Architecture} \\[6pt]
+{\fontsize{9.5}{11.5}\selectfont\textcolor[HTML]{3A3A3A}{+91 9843579926 $|$ sujithssd14@gmail.com $|$ \ulink{https://github.com/su-jin1425}{github.com/su-jin1425} $|$ \ulink{https://linkedin.com/in/sujith14}{linkedin.com/in/sujith14} $|$ \ulink{https://sujith1425.vercel.app}{sujith1425.vercel.app}}}
+\end{tabularx}
+
+%---- SUMMARY ----
+\section{Summary}
+\vspace{2pt}
+
+{\color[HTML]{0A0A0A}\fontsize{11}{14}\selectfont
+Nimble, agile \textbf{Software Engineer} with a proven track record of building scalable, distributed systems and lightweight reactive microservices. Deeply committed to backing the broader engineering community through major open-source contributions. Expert in event-driven architecture, caching solutions, and leveraging GenAI tools (GitHub Copilot, LangChain) to accelerate delivery.}
+
+%---- SKILLS ----
+\section{Skills}
+\vspace{2pt}
+
+{\color[HTML]{0A0A0A}\fontsize{11}{14}\selectfont
+\textbf{Backend \& Architecture:} Java, Kotlin, Spring Boot, WebFlux, Event-Driven Architecture, Microservices \\[2pt]
+\textbf{Data \& Messaging:} PostgreSQL, Apache Kafka, Cassandra (NoSQL), Redis (Caching), Asynchronous APIs \\[2pt]
+\textbf{Tools \& Methodologies:} GitHub Copilot, GenAI, Agile, Cross-Functional Collaboration, Distributed Systems}
+
+%---- WORK EXPERIENCE ----
+\section{Work Experience}
+\vspace{2pt}
+
+\begin{tabularx}{\linewidth}{@{}p{0.40\linewidth} R@{}}
+\subheading{App / Web Developer} & \meta{\ulink{https://sites.google.com/view/cropsky/home}{CropSky} $|$ VIT-TBI Hub $|$ 2024 -- Present}
+\end{tabularx}
+\begin{itemize}[nosep, leftmargin=1.5em, itemsep=2pt, topsep=2pt]
+  \item {\color[HTML]{0A0A0A}\fontsize{11}{14}\selectfont Functioned as a core member of a cross-functional agile team to build next-generation technical capabilities, accelerating spatial data collection by \textbf{40\%}.}
+  \item {\color[HTML]{0A0A0A}\fontsize{11}{14}\selectfont Ensured solutions were highly testable and extensible, successfully participating in design and code reviews across 3 major product launches.}
+\end{itemize}
+
+\begin{tabularx}{\linewidth}{@{}l R@{}}
+\subheading{Founder} & \meta{\ulink{https://shoot-the-breeze.vercel.app}{Shoot the Breeze} $|$ 2023 -- Present}
+\end{tabularx}
+\begin{itemize}[nosep, leftmargin=1.5em, itemsep=2pt, topsep=2pt]
+  \item {\color[HTML]{0A0A0A}\fontsize{11}{14}\selectfont Mentored less experienced engineers and collaborated with stakeholders to refine Epics, improving operational efficiency for \textbf{15+ local clients}.}
+\end{itemize}
+
+%---- PROJECTS ----
+\section{Projects}
+\vspace{2pt}
+
+\begin{tabularx}{\linewidth}{@{}l R@{}}
+\subheading{\ulink{https://github.com/su-jin1425/Real-Time-Stock-Market-Data-Pipeline}{Real-Time Stock Market Data Pipeline}} & \meta{FinTech \& Event-Driven Architecture}
+\end{tabularx}
+\techstack{Python, Apache Kafka, PostgreSQL, Distributed Systems, Asynchronous APIs}
+\begin{itemize}[nosep, leftmargin=1.5em, itemsep=2pt, topsep=2pt]
+  \item {\color[HTML]{0A0A0A}\fontsize{11}{14}\selectfont Engineered a mission-critical FinTech data pipeline using \textbf{Kafka} and \textbf{PostgreSQL} to process high-throughput financial market events in real-time.}
+  \item {\color[HTML]{0A0A0A}\fontsize{11}{14}\selectfont Implemented scalable, event-driven architecture and messaging to support continuous service availability and high SLAs.}
+\end{itemize}
+
+\begin{tabularx}{\linewidth}{@{}l R@{}}
+\subheading{\ulink{https://github.com/su-jin1425/AI-Workflow-Automation-Platform}{AI Workflow Automation Platform}} & \meta{Distributed Systems \& GenAI Delivery}
+\end{tabularx}
+\techstack{GenAI, Webhooks, Redis Caching, Microservices, API Development}
+\begin{itemize}[nosep, leftmargin=1.5em, itemsep=2pt, topsep=2pt]
+  \item {\color[HTML]{0A0A0A}\fontsize{11}{14}\selectfont Built a scalable, distributed application by optimizing overall performance and leveraging \textbf{Redis caching}.}
+  \item {\color[HTML]{0A0A0A}\fontsize{11}{14}\selectfont Utilized state-of-the-art \textbf{GenAI tools} (Copilot) to accelerate delivery of robust SDKs, webhooks, and intuitive Developer Portals.}
+\end{itemize}
+
+%---- EDUCATION ----
+\section{Education}
+\vspace{2pt}
+
+\begin{tabularx}{\linewidth}{@{}p{0.60\linewidth} R@{}}
+\subheading{Int.MSc Computational Statistics and Data Analytics} & \meta{VIT University $|$ 2022--2027}
+\end{tabularx}
+{\color[HTML]{3A3A3A}\fontsize{11}{14}\selectfont \textbf{Year of Graduation: 2027 : 8.4/10 CGPA} $|$ Coursework: Distributed Systems, Computer Science, Statistics}
+
+\begin{tabularx}{\linewidth}{@{}p{0.60\linewidth} R@{}}
+\subheading{CS50 Programs} & \meta{Harvard University (Online)}
+\end{tabularx}
+{\color[HTML]{3A3A3A}\fontsize{11}{14}\selectfont \ulink{https://cs50.harvard.edu/certificates/b14b78df-e05c-413e-a607-1dd27303053a}{CS50x}, \ulink{https://cs50.harvard.edu/certificates/32477052-9db4-49c4-a5a4-d7e58429ca2c}{CS50P}, \ulink{https://cs50.harvard.edu/certificates/9cdb4d4a-1250-4f8e-9fd7-191864e0f919}{CS50AI}, \ulink{https://cs50.harvard.edu/certificates/bc486f24-f085-4e61-8536-80940b97a1b9}{CS50SQL}, \ulink{https://cs50.harvard.edu/certificates/666838e6-a053-4d82-b179-a60fe745fd84}{CS50R}}
+
+%---- ACHIEVEMENTS ----
+\section{Achievements}
+\vspace{2pt}
+
+\begin{itemize}[nosep, leftmargin=1.5em, itemsep=2pt, topsep=2pt]
+  \item {\color[HTML]{0A0A0A}\fontsize{11}{14}\selectfont \textbf{\ulink{https://github.com/su-jin1425/My-Open-Source-Contributions}{Open Source Contributions}} --- Deeply committed to the engineering community. Resolved \textbf{13+ issues} and submitted \textbf{17+ PRs} to major repositories like \ulink{https://github.com/uber/causalml}{\textbf{Uber CausalML}}, \ulink{https://github.com/scikit-learn-contrib/forest-confidence-interval}{\textbf{scikit-learn-contrib}}, and \ulink{https://github.com/grafana/alloy-scenarios}{\textbf{Grafana}}.}
+  \item {\color[HTML]{0A0A0A}\fontsize{11}{14}\selectfont \textbf{Rank 3 at VIT Vellore (All India Rank 4979)} --- \ulink{https://www.hackerrank.com/contests/goldman-sachs-india-hackathon-2026-cs/leaderboard}{Goldman Sachs India Hackathon 2026} $|$ Score: 250.13}
+\end{itemize}
+
+%---- CERTIFICATIONS ----
+\section{Certifications}
+\vspace{2pt}
+
+\begin{tabularx}{\linewidth}{@{}X X@{}}
+  \begin{itemize}[nosep, leftmargin=1.5em, itemsep=2pt, topsep=0pt]
+    \item {\color[HTML]{0A0A0A}\fontsize{11}{14}\selectfont\ulink{https://www.credly.com/badges/5fff07ae-3c3f-4e08-a3a4-6e014a32f6ca}{\textbf{Google Cloud Computing Foundations}}}
+    \item {\color[HTML]{0A0A0A}\fontsize{11}{14}\selectfont AWS \ulink{https://www.credly.com/badges/ee736e9c-48e5-4c68-9531-a910037530d3}{\textbf{Solutions Architect}} and \ulink{https://www.credly.com/badges/af108ef6-8d45-4bfb-b7a7-ebb3dddb13a4}{\textbf{Developer}}}
+    \item {\color[HTML]{0A0A0A}\fontsize{11}{14}\selectfont\ulink{https://www.freecodecamp.org/certification/su-jin/full-stack}{\textbf{FreeCodeCamp Legacy Full Stack}}}
+  \end{itemize}
+  &
+  \begin{itemize}[nosep, leftmargin=1.5em, itemsep=2pt, topsep=0pt]
+    \item {\color[HTML]{0A0A0A}\fontsize{11}{14}\selectfont\ulink{https://catalog-education.oracle.com/ords/certview/sharebadge?id=8A188574B53FD87EB9A79BC2A5D51B1F6615D7E7B917A20D727F58032D75AD4A}{\textbf{OCI 2025 Certified Developer Professional}}}
+    \item {\color[HTML]{0A0A0A}\fontsize{11}{14}\selectfont\ulink{https://www.credly.com/badges/b225846a-6eda-43e7-8c19-e016faf8139c}{\textbf{Google Generative AI Leader}}}
+    \item {\color[HTML]{0A0A0A}\fontsize{11}{14}\selectfont\ulink{https://www.hackerrank.com/certificates/fb16161c9761}{\textbf{Software Engineer Certification -- HackerRank}}}
+  \end{itemize}
+\end{tabularx}
+
+\end{document}
