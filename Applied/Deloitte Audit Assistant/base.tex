@@ -1,0 +1,137 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage{parskip}
+\usepackage{fontspec}
+\RequirePackage{color}
+\RequirePackage{graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[scale=0.88, top=.4in, bottom=.4in, left=0.5in, right=0.5in]{geometry}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}
+\usepackage{supertabular}
+\usepackage{titlesec}
+\usepackage{multicol}
+\usepackage{multirow}
+
+\titleformat{\section}{\fontsize{15}{17}\selectfont\bfseries\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{4pt}{2pt}
+
+\usepackage[unicode, draft=false]{hyperref}
+\hypersetup{colorlinks=true, urlcolor=[HTML]{1A6FB5}, linkcolor=[HTML]{1A6FB5}}
+\setlength{\parskip}{0pt}
+\usepackage[normalem]{ulem}
+\setmainfont{Josefin Sans}[
+  BoldFont={Josefin Sans Bold},
+  ItalicFont={Josefin Sans Italic},
+  BoldItalicFont={Josefin Sans Bold Italic}
+]
+
+\newcommand{\subheading}[1]{\textbf{#1}}
+\newcommand{\meta}[1]{{\fontsize{10}{12}\selectfont\textcolor[HTML]{3A3A3A}{#1}}}
+\newcommand{\techstack}[1]{{\fontsize{10}{12}\selectfont\textcolor[HTML]{1A1A1A}{\textit{#1}}}}
+\newcommand{\ulink}[2]{\href{#1}{#2}}
+
+\begin{document}
+\pagestyle{empty}
+
+%---- HEADER ----
+\begin{tabularx}{\linewidth}{@{} C @{}}
+{\color[HTML]{000000}\fontsize{30}{35}\selectfont\bfseries Sujith S} \\[5pt]
+{\fontsize{10.5}{12.5}\selectfont\color[HTML]{3A3A3A}
+Audit Assistant -- Data \& Analytics $|$ PySpark $\cdot$ SQL $\cdot$ Tableau $\cdot$ Power BI} \\[6pt]
+{\fontsize{9.5}{11.5}\selectfont\textcolor[HTML]{3A3A3A}{+91 9843579926 $|$ sujithssd14@gmail.com $|$ \ulink{https://github.com/su-jin1425}{github.com/su-jin1425} $|$ \ulink{https://linkedin.com/in/sujith14}{linkedin.com/in/sujith14} $|$ \ulink{https://sujith1425.vercel.app}{sujith1425.vercel.app}}}
+\end{tabularx}
+
+%---- SUMMARY ----
+\section{Summary}
+\vspace{2pt}
+
+{\color[HTML]{0A0A0A}\fontsize{11}{14}\selectfont
+\textbf{Detail-oriented} Data \& Analytics professional with an Int.MSc in Computational Statistics. Passionate about leveraging \textbf{Python, SQL, Tableau, and Databricks} to transform raw client data into meaningful audit insights. Proven ability to query large datasets, identify outliers, and construct compelling visualizations that enhance audit quality, assure data integrity, and drive strategic decision-making.}
+
+%---- SKILLS ----
+\section{Skills}
+\vspace{2pt}
+
+{\color[HTML]{0A0A0A}\fontsize{11}{14}\selectfont
+\textbf{Core Competencies:} Data Analytics, Anomaly Detection, ETL Processing, Pattern Recognition \\[2pt]
+\textbf{Technical \& Tools:} Python, PySpark, R, SQL, Tableau, Power BI, Visual Basic, Databricks, C, C++, Pandas}
+
+%---- WORK EXPERIENCE ----
+\section{Work Experience}
+\vspace{2pt}
+
+\begin{tabularx}{\linewidth}{@{}p{0.40\linewidth} R@{}}
+\subheading{App / Web Developer} & \meta{\ulink{https://sites.google.com/view/cropsky/home}{CropSky} $|$ VIT-TBI Hub $|$ 2024 -- Present}
+\end{tabularx}
+\begin{itemize}[nosep, leftmargin=1.5em, itemsep=2pt, topsep=2pt]
+  \item {\color[HTML]{0A0A0A}\fontsize{11}{14}\selectfont \textbf{Accelerated data profiling by 40\%} by writing optimized SQL queries and Python scripts to extract, transform, and analyze datasets.}
+  \item {\color[HTML]{0A0A0A}\fontsize{11}{14}\selectfont \textbf{Achieved 99.9\% reporting accuracy} by systematically identifying anomalies and validating operational data prior to team reviews.}
+\end{itemize}
+
+\begin{tabularx}{\linewidth}{@{}p{0.40\linewidth} R@{}}
+\subheading{Open Source Contributor} & \meta{\ulink{https://github.com/su-jin1425/My-Open-Source-Contributions}{Open Source Projects} $|$ Completed}
+\end{tabularx}
+\begin{itemize}[nosep, leftmargin=1.5em, itemsep=2pt, topsep=2pt]
+  \item {\color[HTML]{0A0A0A}\fontsize{11}{14}\selectfont \textbf{Uber (\ulink{https://github.com/uber/causalml/pull/1041}{PR \#1041}):} \textbf{Eliminated 100\% of target variance} in CausalML by auditing data processing pipelines and resolving structural anomalies.}
+  \item {\color[HTML]{0A0A0A}\fontsize{11}{14}\selectfont \textbf{Google (\ulink{https://github.com/google/xrblocks/pull/567}{PR \#567}):} \textbf{Uncovered hidden pattern defects} by deeply researching and logging over \textbf{20+ XR Blocks anomalies}.}
+  \item {\color[HTML]{0A0A0A}\fontsize{11}{14}\selectfont \textbf{Adobe (\ulink{https://github.com/adobe/react-spectrum/pull/10560}{PR \#10560}):} \textbf{Prevented critical data loss} by diagnosing complex UI component defects, ensuring stringent quality assurance.}
+\end{itemize}
+
+%---- PROJECTS ----
+\section{Projects}
+\vspace{2pt}
+
+\begin{tabularx}{\linewidth}{@{}l R@{}}
+\subheading{\ulink{https://github.com/su-jin1425/ETL-Pipeline-for-E-Commerce-Analytics}{ETL Pipeline for E-Commerce Analytics}} & \meta{Data Transformation \& Visualization}
+\end{tabularx}
+\techstack{Python, SQL, Apache Airflow, Tableau, Power BI, Pandas}
+\begin{itemize}[nosep, leftmargin=1.5em, itemsep=2pt, topsep=2pt]
+  \item {\color[HTML]{0A0A0A}\fontsize{11}{14}\selectfont \textbf{Processed 500,000+ transaction records} by building a robust ETL pipeline that extracted, cleaned, and transformed large-scale unstructured data into reliable, auditable schemas.}
+  \item {\color[HTML]{0A0A0A}\fontsize{11}{14}\selectfont \textbf{Visualized key business patterns} by developing interactive \textbf{Tableau and Power BI dashboards} that highlighted outliers, revenue trends, and inventory anomalies for stakeholders.}
+\end{itemize}
+
+%---- EDUCATION ----
+\section{Education}
+\vspace{2pt}
+
+\begin{tabularx}{\linewidth}{@{}p{0.60\linewidth} R@{}}
+\subheading{Int.MSc Computational Statistics and Data Analytics} & \meta{VIT University $|$ 2022--2027}
+\end{tabularx}
+{\color[HTML]{3A3A3A}\fontsize{11}{14}\selectfont \textbf{Year of Graduation: 2027 : 8.4/10 CGPA} $|$ Statistical Analysis, Machine Learning, Data Analytics}
+
+\begin{tabularx}{\linewidth}{@{}p{0.60\linewidth} R@{}}
+\subheading{CS50 Programs} & \meta{Harvard University (Online)}
+\end{tabularx}
+{\color[HTML]{3A3A3A}\fontsize{11}{14}\selectfont \textbf{Certifications:} \ulink{https://cs50.harvard.edu/certificates/b14b78df-e05c-413e-a607-1dd27303053a}{CS50x}, \ulink{https://cs50.harvard.edu/certificates/32477052-9db4-49c4-a5a4-d7e58429ca2c}{CS50P}, \ulink{https://cs50.harvard.edu/certificates/9cdb4d4a-1250-4f8e-9fd7-191864e0f919}{CS50AI}, \ulink{https://cs50.harvard.edu/certificates/bc486f24-f085-4e61-8536-80940b97a1b9}{CS50SQL}, \ulink{https://cs50.harvard.edu/certificates/666838e6-a053-4d82-b179-a60fe745fd84}{CS50R}}
+
+%---- ACHIEVEMENTS ----
+\section{Achievements}
+\vspace{2pt}
+
+\begin{itemize}[nosep, leftmargin=1.5em, itemsep=2pt, topsep=2pt]
+  \item {\color[HTML]{0A0A0A}\fontsize{11}{14}\selectfont \textbf{Founder} --- \ulink{https://shoot-the-breeze.vercel.app}{Shoot the Breeze}: \textbf{Identified 15+ process inefficiencies} by auditing traditional Indian businesses, utilizing data insights to recommend automation solutions.}
+  \item {\color[HTML]{0A0A0A}\fontsize{11}{14}\selectfont \textbf{Publication} --- \ulink{https://www.elruha.org/_files/ugd/614b1f_6b95e1b697bf452b9907ba46e0151c05.pdf\#page=774}{\textbf{Peer-reviewed research paper}} on \ulink{https://github.com/su-jin1425/Set-Project}{\textbf{Stock Market Analysis and Prediction using ML}}.}
+  \item {\color[HTML]{0A0A0A}\fontsize{11}{14}\selectfont \textbf{Rank 3 at VIT Vellore} --- \ulink{https://www.hackerrank.com/contests/goldman-sachs-india-hackathon-2026-cs/leaderboard}{Goldman Sachs India Hackathon 2026}, outperforming \textbf{500+ participants} in advanced analytical problem solving.}
+\end{itemize}
+
+%---- CERTIFICATIONS ----
+\section{Certifications}
+\vspace{2pt}
+
+\begin{tabularx}{\linewidth}{@{}X X@{}}
+  \begin{itemize}[nosep, leftmargin=1.5em, itemsep=2pt, topsep=0pt]
+    \item {\color[HTML]{0A0A0A}\fontsize{11}{14}\selectfont AWS \ulink{https://www.credly.com/badges/ee736e9c-48e5-4c68-9531-a910037530d3}{\textbf{Solutions Architect}} and \ulink{https://www.credly.com/badges/af108ef6-8d45-4bfb-b7a7-ebb3dddb13a4}{\textbf{Developer}}}
+    \item {\color[HTML]{0A0A0A}\fontsize{11}{14}\selectfont\ulink{https://www.credly.com/badges/b225846a-6eda-43e7-8c19-e016faf8139c}{\textbf{Google Generative AI Leader}}}
+    \item {\color[HTML]{0A0A0A}\fontsize{11}{14}\selectfont\ulink{https://www.freecodecamp.org/certification/su-jin/full-stack}{\textbf{FreeCodeCamp Legacy Full Stack}}}
+  \end{itemize}
+  &
+  \begin{itemize}[nosep, leftmargin=1.5em, itemsep=2pt, topsep=0pt]
+    \item {\color[HTML]{0A0A0A}\fontsize{11}{14}\selectfont\ulink{https://catalog-education.oracle.com/ords/certview/sharebadge?id=8A188574B53FD87EB9A79BC2A5D51B1F6615D7E7B917A20D727F58032D75AD4A}{\textbf{OCI 2025 Certified Developer Professional}}}
+    \item {\color[HTML]{0A0A0A}\fontsize{11}{14}\selectfont\ulink{https://www.credly.com/badges/5fff07ae-3c3f-4e08-a3a4-6e014a32f6ca}{\textbf{Google Cloud Computing Foundations}}}
+    \item {\color[HTML]{0A0A0A}\fontsize{11}{14}\selectfont\ulink{https://www.hackerrank.com/certificates/fb16161c9761}{\textbf{Software Engineer Certification -- HackerRank}}}
+  \end{itemize}
+\end{tabularx}
+
+\end{document}
